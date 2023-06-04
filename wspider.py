@@ -102,7 +102,7 @@ for product_list_url in product_lists_url:
     url_pdf_dict['pdf_name']=a_element.string.strip()
     print(url_pdf_dict)
     pdf_urls.append(url_pdf_dict)
-print(pdf_urls)
+# print(pdf_urls)
 
 for pdf_url in pdf_urls:
     url = pdf_url['pdf_url']
