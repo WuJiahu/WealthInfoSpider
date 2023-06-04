@@ -90,8 +90,7 @@ for product_list in product_lists:
 # 测试 product_lists_url={'/Info/6884940'}
 for product_list_url in product_lists_url:
     info_url = base_url + product_list_url
-    print(info_url)
-    print(info_url)
+    # print(info_url)
     response = requests.get(info_url, headers=headers)
     soup = BeautifulSoup(response.content, 'html.parser')
     # 先找到li标签
